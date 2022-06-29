@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>House Cost Prediction</title>
+<!--
+Next Level CSS Template
+https://templatemo.com/tm-532-next-level
+-->
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row tm-brand-row">
+        <div class="col-lg-4 col-10">
+          <div class="tm-brand-container">
+            <div class="tm-brand-texts">
+              <h1><b>House Cost Prediction -- A Machine Learning Project</b></h1>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-8 col-2 tm-nav-col">
+          <div class="tm-nav">
+            <nav class="navbar navbar-expand-lg navbar-light tm-navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-0">
+                  <li class="nav-item active">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="http://www.kushagrame.work/projects.html"
+                      >View All Projects <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  
+                 
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row tm-welcome-row">
+        <div class="col-12 tm-page-cols-container">
+          <div class="tm-page-col-left tm-welcome-box tm-bg-primary">
+            <p class="tm-welcome-text">
+              <em>"It is a Machine Learning Project in which a model is trained for predicting house prices based on 13 features and a label."</em>
+            </p>
+          </div>
+          <div class="tm-page-col-right">
+            <div
+              class="tm-welcome-parallax"
+              data-parallax="scroll"
+              data-image-src="img/hcp1.png"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="row tm-pt-4 tm-pb-6">
+        <div class="col-12 tm-page-cols-container">
+          <div class="tm-page-col-right">
+            <h2 class="tm-text-secondary tm-mb-5">
+                HOUSE COST PREDICTION | Machine Learning, Supervised algorithms, Jupyter Notebook & Python
+            </h2>
+            <p class="tm-mb-6">
+              <strong>AIM: </strong> From given dataset having 14 features (including a label), train a model to predict house prices with higher accuracy.
+              <br>
+              <strong>Tools Used:</strong>
+              <ol><li>Python 3.9.12</li><li>Libraries: matplotlib, numpy, pandas, scipy and scikit-learn</li><li>Jupyter Notebook</li></ol>
+              <br>
+              <strong>The project follows:</strong>
+              <ol><li>Supervised learning.</li><li>Has Regression task.</li><li>It is a batch learning i.e. input data is not continuous.</li><li>The model uses Root Mean Squared Error for identifying the better algorithm.</li></ol>
+            </p>
+            <p class="tm-mb-6">
+                <strong>My Machine details: </strong> 
+                <ol><li>Operating System: Windows 10</li><li>CPU: Intel(R) Core(TM)- i3 6006U CPU @ 2.00GHz </li><li>Memory: RAM- 8GB, SSD-240GB</li><li>GPU: 2GB</li></ol>
+                <br>
+            </p>
+            <p class="mb-0">
+           	 <strong>Stamp from Command Prompt for updating pip, libraries and running of Jupyter Notebook kernel: </strong>
+              <br>
+              <iframe src="./codes/stampfromcmd.txt" height="400" width="100%" title="Stamp from Command Prompt"></iframe>
+               <br>
+               <br>
+               <strong>Discription:</strong>
+               <br>
+               
+               The model is trained for predicting the house prices based on given features dataset. The dataset is provided with certain features and a label. The dataset is taken from "housing data boston uci repository". This project is done with the help from YouTube "codeWithHarry". Respect Mr. Harry sir guided in this project, in which we have solved the prediction problem of Dragon Real EState. I have followed his video step by step to put my first practical approach in training the dataset.
+               <br>
+               <br>
+               <strong>Data Provided: </strong>
+               <br>
+               housing.data:
+               <iframe src="./codes/housing.data.txt" height="400" width="100%" title="housing.data"></iframe>
+               <br>
+               housing.names: 
+               <iframe src="./codes/housing.names.txt" height="400" width="100%" title="housing.names"></iframe>
+               <br>
+               <br>
+               <strong>Making of project: </strong>
+               <br>
+               <ul>
+
+                <li>First converted the raw data from Internet into csv (comma-separated values) file.</li>
+                <li>Integrating each column in housing data with housing names.</li>
+                <li>Analyzing the dataset using Pandas and matplotlib libraries.</li>
+                <li>Then Training data & testing data splitting is done. It is done to saparate training data with test data. As doing all activities and performing algorithms directly to data can harm our predictions in real life scenarios. Test data is preserved and never touched until model is prepared.</li>
+                <li>We used scikit learn for startified sampling. Stratified sampling is necessary as it covers all kind of data in our population. In aboove method, stratified sampling is not guranteed. For ex. CHAS has 471 "0" values and 35 "1" values. It is important to make sure training data shows both 0 and 1 values to the algorithm.</li>
+                <li>Then we observed the correlation of label to each feature. Pearson correlation value lies between -1 and 1. Where -1 means "strong negative correlation" which means inversely propotional, 1 means "strong postive correlation" which means directly proptional. <br><img alt="Correlation graph image unabe to load!" src="./img/MLProject/correlation.png" width="100%" height="100%"><br>There are no straight lines observed digonally, because it would not be much informative, hence histograms are drawn. As we have observed, LSTAT have negative correlation (-0.737663) with MEDV therefore MEDV is inversely proptional to LSTAT and similar graphs.<br></li>
+                <li>Choosen the best column based on linear growth from graphs i.e. RM (Number of rooms). Then, drawing plot between RM and label i.e. MEDV. We can elimate the outlier points to get more accurate results in our predictions. This is the benifit of finding correlation matrix. <br><img alt="Correlation graph image unabe to load!" src="./img/MLProject/bettercorrelation.png" width="100%" height="100%"><br></li>
+                <li>Then, Trying out new attribute combinations to get better coorelations, like divided TAX with RM to get a new column TAXRM, which has better negstive correlation.</li>
+                <li>Handling missing Values To take care of missing values, we have three options: -- Get rid of missing data points. -- Get rid of whole attribute. -- To replace missing values with 0, Mean or Median, whichever suites the most. Choosen the third approach.</li>
+                <li>Used Scikit learn built-in imputer to deal with missing values.</li>
+                <li>Feature Scaling to scale small and large values for better predictions. -- Min-Max (Normalization) (value - min)/(max - min) sklearn provides a class called MinMaxScaler -- Standardization (value-mean)/std std means standard deviation sklearn provides a class called Standard Scaler.</li>
+                <li>In this project, Standardization is used while creating the pipeline. Pipeline is used for a series of atomation.</li>
+                <li>Selecting a desired model for our project based on above observations. Alogorithms tested:
+                    <ol><li>LinearRegression (Rejected based on Mean: 4.972693947923473 Standard Deviation: 1.0635397337561052)</li><li>DecisionTreeRegressor (Rejected based on Mean: 4.451684086300771 Standard Deviation: 0.9134544540801773)</li><li>RandomForestRegressor (Choosen based on Mean: 3.3613984223751876 Standard Deviation: 0.6871641160560278)</li></ol>
+                    All these predictions are recorded in a "Results.txt" file.
+                </li>
+                <li>Evaluation of the model, to get rid of overfitting or underfitting. This is done for each algorithm to observe rmse (root mean squared error). The lesser the value the better is the algorithm. But it should not be the zero, as we are getting in DecisionTreeRegressor algorithm in which it got overfitted.</li>
+                <li>Once overfitting was occured, we prepared for better evaluation with cross validation. In this, We will do stepwise testing for errors. Like, in first round, we will eliminate 1, and test rest of the cases, than eliminate 1,2 and test rest of the cases and so on... for 1,2,3,4,5,6,7,8..</li>
+                <li>Scikit learn has cross_val_score function to perform the operation. By using different "rmse_scores" (root mean squared errors) of different algorithms and observing Mean and std, helped in selection of better algorithm.</li>
+                <li>Finally, after choosing the algorithm, the model needs to be saved for future purposes.</li>
+                <li>It is saved using "dump" function under joblib.</li>
+                <li>Finally, testing the model for test data. In my case, it got 3.0763381131264658 as rmse value. Which is different from YouTube Video.</li>
+                </ul>
+                <br>
+                <strong>Results.txt file: </strong>
+               <br>
+               <iframe src="./codes/Results.txt" height="400" width="100%" title="Results.txt file"></iframe>
+               <br>
+               <br>
+    
+               <strong>Results: </strong>Model is trained as expected with rmse= 3.0763381131264658 on test dataset. Which is acceptable. The model is saved with filename: DRL.joblib.
+               <br>
+               <br>
+               <strong>Outputs: </strong>
+               <br>
+               <br>
+               DragonRealEstate.ipynb
+               <iframe src="./codes/DragonRealEstate.html" height="700" width="100%" title="DragonRealEstate.ipynb"></iframe>
+               <br>
+               Using the model.ipnyb
+               <iframe src="./codes/Using the model.html" height="400" width="100%" title="Using the model.ipnyb"></iframe>
+               <br>
+               <br>
+               Screenshot of using the saved model:
+               <br>
+               <br>
+              <ol><li><img alt="Output image unabe to load!" src="./img/hcp1.png" width="100%" height="100%"><br></li></ol>
+               <br>
+               <p style="color:blue"> <b> For all files please visit my: <a href="https://github.com/gitkushagra/House-Cost-Prediction">
+                <img alt="Logo: link to github" src="./img/gitlogo.png" width="50" height="50">!
+                </a></b></p>
+            </p>
+            
+          </div>
+        </div>
+        
+      </section>
+      
+      <div class="tm-page-col-right">
+        
+
+
+
+
+      
+
+        </div>
+      </div>
+      <!-- row -->
+
+      <!-- Call to Action -->
+  
+      <!-- Page footer -->
+      <footer class="row tm-page-footer">
+        <p class="col-12 tm-copyright-text mb-0">
+          © Copyright Kushagra | Made with ❤️ in India
+          <a href="http://www.kushagrame.work" rel="nofollow" class="tm-copyright-link"><b>| Go to home</b></a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
