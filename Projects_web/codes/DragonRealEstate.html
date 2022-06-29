@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>6e0177dcef3a4ff195a5cf3b19b4c88c</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="dragon-real-state----price-prediction" class="cell markdown">
+<h1>Dragon Real State -- Price Prediction</h1>
+</section>
+<div class="cell code" data-execution_count="1">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="2">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>housing <span class="op">=</span> pd.read_csv(<span class="st">&quot;data.csv&quot;</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="3">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>housing.head()  <span class="co">#return top 5 rows</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="3">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CRIM</th>
+      <th>ZN</th>
+      <th>INDUS</th>
+      <th>CHAS</th>
+      <th>NOX</th>
+      <th>RM</th>
+      <th>AGE</th>
+      <th>DIS</th>
+      <th>RAD</th>
+      <th>TAX</th>
+      <th>PTRATIO</th>
+      <th>B</th>
+      <th>LSTAT</th>
+      <th>MEDV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.00632</td>
+      <td>18.0</td>
+      <td>2.31</td>
+      <td>0</td>
+      <td>0.538</td>
+      <td>6.575</td>
+      <td>65.2</td>
+      <td>4.0900</td>
+      <td>1</td>
+      <td>296</td>
+      <td>15.3</td>
+      <td>396.90</td>
+      <td>4.98</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.02731</td>
+      <td>0.0</td>
+      <td>7.07</td>
+      <td>0</td>
+      <td>0.469</td>
+      <td>6.421</td>
+      <td>78.9</td>
+      <td>4.9671</td>
+      <td>2</td>
+      <td>242</td>
+      <td>17.8</td>
+      <td>396.90</td>
+      <td>9.14</td>
+      <td>21.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.02729</td>
+      <td>0.0</td>
+      <td>7.07</td>
+      <td>0</td>
+      <td>0.469</td>
+      <td>7.185</td>
+      <td>61.1</td>
+      <td>4.9671</td>
+      <td>2</td>
+      <td>242</td>
+      <td>17.8</td>
+      <td>392.83</td>
+      <td>4.03</td>
+      <td>34.7</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.03237</td>
+      <td>0.0</td>
+      <td>2.18</td>
+      <td>0</td>
+      <td>0.458</td>
+      <td>6.998</td>
+      <td>45.8</td>
+      <td>6.0622</td>
+      <td>3</td>
+      <td>222</td>
+      <td>18.7</td>
+      <td>394.63</td>
+      <td>2.94</td>
+      <td>33.4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.06905</td>
+      <td>0.0</td>
+      <td>2.18</td>
+      <td>0</td>
+      <td>0.458</td>
+      <td>7.147</td>
+      <td>54.2</td>
+      <td>6.0622</td>
+      <td>3</td>
+      <td>222</td>
+      <td>18.7</td>
+      <td>396.90</td>
+      <td>5.33</td>
+      <td>36.2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="4">
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>housing.info() <span class="co">#gives information about each column in csv</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 506 entries, 0 to 505
+Data columns (total 14 columns):
+ #   Column   Non-Null Count  Dtype  
+---  ------   --------------  -----  
+ 0   CRIM     506 non-null    float64
+ 1   ZN       506 non-null    float64
+ 2   INDUS    506 non-null    float64
+ 3   CHAS     506 non-null    int64  
+ 4   NOX      506 non-null    float64
+ 5   RM       501 non-null    float64
+ 6   AGE      506 non-null    float64
+ 7   DIS      506 non-null    float64
+ 8   RAD      506 non-null    int64  
+ 9   TAX      506 non-null    int64  
+ 10  PTRATIO  506 non-null    float64
+ 11  B        506 non-null    float64
+ 12  LSTAT    506 non-null    float64
+ 13  MEDV     506 non-null    float64
+dtypes: float64(11), int64(3)
+memory usage: 55.5 KB
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="5">
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>housing[<span class="st">&#39;CHAS&#39;</span>].value_counts() <span class="co"># return each type of value in selected column along with its counts</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<pre><code>0    471
+1     35
+Name: CHAS, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="6">
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>housing[<span class="st">&#39;NOX&#39;</span>].value_counts()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+<pre><code>0.538    23
+0.713    18
+0.437    17
+0.871    16
+0.624    15
+         ..
+0.394     1
+0.518     1
+0.385     1
+0.389     1
+0.435     1
+Name: NOX, Length: 81, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="7">
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>housing.describe() <span class="co">#returns 1. count (ignores null values) 2. Mean 3. Standard Deviation 4. Min and Max values 5. How much percentage of values are less than represented value</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CRIM</th>
+      <th>ZN</th>
+      <th>INDUS</th>
+      <th>CHAS</th>
+      <th>NOX</th>
+      <th>RM</th>
+      <th>AGE</th>
+      <th>DIS</th>
+      <th>RAD</th>
+      <th>TAX</th>
+      <th>PTRATIO</th>
+      <th>B</th>
+      <th>LSTAT</th>
+      <th>MEDV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>501.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+      <td>506.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>3.613524</td>
+      <td>11.363636</td>
+      <td>11.136779</td>
+      <td>0.069170</td>
+      <td>0.554695</td>
+      <td>6.285850</td>
+      <td>68.574901</td>
+      <td>3.795043</td>
+      <td>9.549407</td>
+      <td>408.237154</td>
+      <td>18.455534</td>
+      <td>356.674032</td>
+      <td>12.653063</td>
+      <td>22.532806</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8.601545</td>
+      <td>23.322453</td>
+      <td>6.860353</td>
+      <td>0.253994</td>
+      <td>0.115878</td>
+      <td>0.701639</td>
+      <td>28.148861</td>
+      <td>2.105710</td>
+      <td>8.707259</td>
+      <td>168.537116</td>
+      <td>2.164946</td>
+      <td>91.294864</td>
+      <td>7.141062</td>
+      <td>9.197104</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.006320</td>
+      <td>0.000000</td>
+      <td>0.460000</td>
+      <td>0.000000</td>
+      <td>0.385000</td>
+      <td>3.561000</td>
+      <td>2.900000</td>
+      <td>1.129600</td>
+      <td>1.000000</td>
+      <td>187.000000</td>
+      <td>12.600000</td>
+      <td>0.320000</td>
+      <td>1.730000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.082045</td>
+      <td>0.000000</td>
+      <td>5.190000</td>
+      <td>0.000000</td>
+      <td>0.449000</td>
+      <td>5.885000</td>
+      <td>45.025000</td>
+      <td>2.100175</td>
+      <td>4.000000</td>
+      <td>279.000000</td>
+      <td>17.400000</td>
+      <td>375.377500</td>
+      <td>6.950000</td>
+      <td>17.025000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.256510</td>
+      <td>0.000000</td>
+      <td>9.690000</td>
+      <td>0.000000</td>
+      <td>0.538000</td>
+      <td>6.202000</td>
+      <td>77.500000</td>
+      <td>3.207450</td>
+      <td>5.000000</td>
+      <td>330.000000</td>
+      <td>19.050000</td>
+      <td>391.440000</td>
+      <td>11.360000</td>
+      <td>21.200000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>3.677083</td>
+      <td>12.500000</td>
+      <td>18.100000</td>
+      <td>0.000000</td>
+      <td>0.624000</td>
+      <td>6.625000</td>
+      <td>94.075000</td>
+      <td>5.188425</td>
+      <td>24.000000</td>
+      <td>666.000000</td>
+      <td>20.200000</td>
+      <td>396.225000</td>
+      <td>16.955000</td>
+      <td>25.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>88.976200</td>
+      <td>100.000000</td>
+      <td>27.740000</td>
+      <td>1.000000</td>
+      <td>0.871000</td>
+      <td>8.780000</td>
+      <td>100.000000</td>
+      <td>12.126500</td>
+      <td>24.000000</td>
+      <td>711.000000</td>
+      <td>22.000000</td>
+      <td>396.900000</td>
+      <td>37.970000</td>
+      <td>50.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="8">
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Shows graphs at present i.e. during execution</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="9">
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="10">
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>housing.hist(bins <span class="op">=</span> <span class="dv">50</span>, figsize<span class="op">=</span>(<span class="dv">20</span>,<span class="dv">15</span>))</span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+<pre><code>array([[&lt;AxesSubplot:title={&#39;center&#39;:&#39;CRIM&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;ZN&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;INDUS&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;CHAS&#39;}&gt;],
+       [&lt;AxesSubplot:title={&#39;center&#39;:&#39;NOX&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;RM&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;AGE&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;DIS&#39;}&gt;],
+       [&lt;AxesSubplot:title={&#39;center&#39;:&#39;RAD&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;TAX&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;PTRATIO&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;B&#39;}&gt;],
+       [&lt;AxesSubplot:title={&#39;center&#39;:&#39;LSTAT&#39;}&gt;,
+        &lt;AxesSubplot:title={&#39;center&#39;:&#39;MEDV&#39;}&gt;, &lt;AxesSubplot:&gt;,
+        &lt;AxesSubplot:&gt;]], dtype=object)</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_def1e874901649fe8b430377f558a7d6/0489c4d73017cf024dae5db3fa02d1602e601076.png" /></p>
+</div>
+</div>
+<section id="training-data--testing-data-splitting" class="cell markdown">
+<h2>Training data &amp; testing data splitting</h2>
+</section>
+<section id="it-is-done-to-saparate-training-data-with-test-data-as-doing-all-activities-and-performing-algorithms-directly-to-data-can-harm-our-predictions-in-real-life-scenarios" class="cell markdown">
+<h3>It is done to saparate training data with test data. As doing all activities and performing algorithms directly to data can harm our predictions in real life scenarios.</h3>
+</section>
+<div class="cell code" data-execution_count="11">
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="12">
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#for learning purpose as it is available in scikit learn</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> split_train_test(data,test_ratio): <span class="co">#test ratio is the part of data that needs to be preserved for testing and is not involved in training</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    np.random.seed(<span class="dv">42</span>) <span class="co">#It fixes the random shuffled values thus preventing overfitting i.e. leaking test data into training data</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    shuffled<span class="op">=</span>np.random.permutation(<span class="bu">len</span>(data)) <span class="co">#length of the data is permutated randomly shuffled with indices</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    test_set_size <span class="op">=</span> <span class="bu">int</span>(<span class="bu">len</span>(data)<span class="op">*</span>test_ratio)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    test_indices <span class="op">=</span> shuffled[:test_set_size]</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    train_indices <span class="op">=</span> shuffled[test_set_size:]</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data.iloc[train_indices],data.iloc[test_indices]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="13">
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#train_set, test_set=split_train_test(housing,0.2)</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="14">
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#print(f&quot;Rows in train set: {len(train_set)}\nRows in test set: {len(test_set)}&quot;)</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="15">
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>train_set, test_set <span class="op">=</span> train_test_split(housing, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="16">
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Rows in train set: </span><span class="sc">{</span><span class="bu">len</span>(train_set)<span class="sc">}</span><span class="ch">\n</span><span class="ss">Rows in test set: </span><span class="sc">{</span><span class="bu">len</span>(test_set)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Rows in train set: 404
+Rows in test set: 102
+</code></pre>
+</div>
+</div>
+<section id="stratified-sampling-is-necessary-as-it-covers-all-kind-of-data-in-our-population-in-aboove-method-stratified-sampling-is-not-guranteed-for-ex-chas-has-471-0-values-and-35-1-values-it-is-important-to-make-sure-training-data-shows-both-0-and-1-values-to-the-algorithm" class="cell markdown">
+<h2>Stratified sampling is necessary as it covers all kind of data in our population. In aboove method, stratified sampling is not guranteed. For ex. CHAS has 471 "0" values and 35 "1" values. It is important to make sure training data shows both 0 and 1 values to the algorithm.</h2>
+</section>
+<div class="cell code" data-execution_count="17">
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> StratifiedShuffleSplit</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>split <span class="op">=</span> StratifiedShuffleSplit(n_splits<span class="op">=</span><span class="dv">1</span>, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> train_index, test_index <span class="kw">in</span>  split.split(housing,housing[<span class="st">&#39;CHAS&#39;</span>]):</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    strat_train_set <span class="op">=</span> housing.loc[train_index]</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    strat_test_set <span class="op">=</span> housing.loc[test_index]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="18">
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>strat_test_set</span></code></pre></div>
+<div class="output execute_result" data-execution_count="18">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CRIM</th>
+      <th>ZN</th>
+      <th>INDUS</th>
+      <th>CHAS</th>
+      <th>NOX</th>
+      <th>RM</th>
+      <th>AGE</th>
+      <th>DIS</th>
+      <th>RAD</th>
+      <th>TAX</th>
+      <th>PTRATIO</th>
+      <th>B</th>
+      <th>LSTAT</th>
+      <th>MEDV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>342</th>
+      <td>0.02498</td>
+      <td>0.0</td>
+      <td>1.89</td>
+      <td>0</td>
+      <td>0.518</td>
+      <td>6.540</td>
+      <td>59.7</td>
+      <td>6.2669</td>
+      <td>1</td>
+      <td>422</td>
+      <td>15.9</td>
+      <td>389.96</td>
+      <td>8.65</td>
+      <td>16.5</td>
+    </tr>
+    <tr>
+      <th>379</th>
+      <td>17.86670</td>
+      <td>0.0</td>
+      <td>18.10</td>
+      <td>0</td>
+      <td>0.671</td>
+      <td>6.223</td>
+      <td>100.0</td>
+      <td>1.3861</td>
+      <td>24</td>
+      <td>666</td>
+      <td>20.2</td>
+      <td>393.74</td>
+      <td>21.78</td>
+      <td>10.2</td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td>0.61470</td>
+      <td>0.0</td>
+      <td>6.20</td>
+      <td>0</td>
+      <td>0.507</td>
+      <td>6.618</td>
+      <td>80.8</td>
+      <td>3.2721</td>
+      <td>8</td>
+      <td>307</td>
+      <td>17.4</td>
+      <td>396.90</td>
+      <td>7.60</td>
+      <td>30.1</td>
+    </tr>
+    <tr>
+      <th>219</th>
+      <td>0.11425</td>
+      <td>0.0</td>
+      <td>13.89</td>
+      <td>1</td>
+      <td>0.550</td>
+      <td>6.373</td>
+      <td>92.4</td>
+      <td>3.3633</td>
+      <td>5</td>
+      <td>276</td>
+      <td>16.4</td>
+      <td>393.74</td>
+      <td>10.50</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>0.25387</td>
+      <td>0.0</td>
+      <td>6.91</td>
+      <td>0</td>
+      <td>0.448</td>
+      <td>5.399</td>
+      <td>95.3</td>
+      <td>5.8700</td>
+      <td>3</td>
+      <td>233</td>
+      <td>17.9</td>
+      <td>396.90</td>
+      <td>30.81</td>
+      <td>14.4</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>0.05660</td>
+      <td>0.0</td>
+      <td>3.41</td>
+      <td>0</td>
+      <td>0.489</td>
+      <td>7.007</td>
+      <td>86.3</td>
+      <td>3.4217</td>
+      <td>2</td>
+      <td>270</td>
+      <td>17.8</td>
+      <td>396.90</td>
+      <td>5.50</td>
+      <td>23.6</td>
+    </tr>
+    <tr>
+      <th>466</th>
+      <td>3.77498</td>
+      <td>0.0</td>
+      <td>18.10</td>
+      <td>0</td>
+      <td>0.655</td>
+      <td>5.952</td>
+      <td>84.7</td>
+      <td>2.8715</td>
+      <td>24</td>
+      <td>666</td>
+      <td>20.2</td>
+      <td>22.01</td>
+      <td>17.15</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>0.05360</td>
+      <td>21.0</td>
+      <td>5.64</td>
+      <td>0</td>
+      <td>0.439</td>
+      <td>6.511</td>
+      <td>21.1</td>
+      <td>6.8147</td>
+      <td>4</td>
+      <td>243</td>
+      <td>16.8</td>
+      <td>396.90</td>
+      <td>5.28</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>0.07165</td>
+      <td>0.0</td>
+      <td>25.65</td>
+      <td>0</td>
+      <td>0.581</td>
+      <td>6.004</td>
+      <td>84.1</td>
+      <td>2.1974</td>
+      <td>2</td>
+      <td>188</td>
+      <td>19.1</td>
+      <td>377.67</td>
+      <td>14.27</td>
+      <td>20.3</td>
+    </tr>
+    <tr>
+      <th>218</th>
+      <td>0.11069</td>
+      <td>0.0</td>
+      <td>13.89</td>
+      <td>1</td>
+      <td>0.550</td>
+      <td>5.951</td>
+      <td>93.8</td>
+      <td>2.8893</td>
+      <td>5</td>
+      <td>276</td>
+      <td>16.4</td>
+      <td>396.90</td>
+      <td>17.92</td>
+      <td>21.5</td>
+    </tr>
+  </tbody>
+</table>
+<p>102 rows × 14 columns</p>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="19">
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>strat_test_set[<span class="st">&#39;CHAS&#39;</span>].value_counts()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="19">
+<pre><code>0    95
+1     7
+Name: CHAS, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="20">
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>strat_train_set[<span class="st">&#39;CHAS&#39;</span>].value_counts()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+<pre><code>0    376
+1     28
+Name: CHAS, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="21">
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>housing <span class="op">=</span> strat_train_set.copy() <span class="co">#Copying the training data to housing attribute </span></span></code></pre></div>
+</div>
+<section id="note-pearson-correlation-value-lies-between--1-and-1-where--1-means-strong-negative-correlation-which-means-inversely-propotional-1-means-strong-postive-correlation-which-means-directly-proptional" class="cell markdown">
+<h2>Note: Pearson correlation value lies between -1 and 1. Where -1 means "strong negative correlation" which means inversely propotional, 1 means "strong postive correlation" which means directly proptional.</h2>
+</section>
+<section id="looking-for-correlation" class="cell markdown">
+<h2>Looking for correlation:</h2>
+</section>
+<div class="cell code" data-execution_count="22">
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>corr_matrix <span class="op">=</span> housing.corr()</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="23">
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>corr_matrix[<span class="st">&#39;MEDV&#39;</span>].sort_values(ascending <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="23">
+<pre><code>MEDV       1.000000
+RM         0.683023
+B          0.361761
+ZN         0.339741
+DIS        0.240451
+CHAS       0.205066
+AGE       -0.364596
+RAD       -0.374693
+CRIM      -0.393715
+NOX       -0.422873
+TAX       -0.456657
+INDUS     -0.473516
+PTRATIO   -0.493534
+LSTAT     -0.740494
+Name: MEDV, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="24">
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas.plotting <span class="im">import</span> scatter_matrix</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>attributes <span class="op">=</span> [<span class="st">&quot;MEDV&quot;</span>,<span class="st">&quot;RM&quot;</span>,<span class="st">&quot;ZN&quot;</span>,<span class="st">&quot;LSTAT&quot;</span>]</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>scatter_matrix(housing[attributes], figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">8</span>))</span></code></pre></div>
+<div class="output execute_result" data-execution_count="24">
+<pre><code>array([[&lt;AxesSubplot:xlabel=&#39;MEDV&#39;, ylabel=&#39;MEDV&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;RM&#39;, ylabel=&#39;MEDV&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;ZN&#39;, ylabel=&#39;MEDV&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;LSTAT&#39;, ylabel=&#39;MEDV&#39;&gt;],
+       [&lt;AxesSubplot:xlabel=&#39;MEDV&#39;, ylabel=&#39;RM&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;RM&#39;, ylabel=&#39;RM&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;ZN&#39;, ylabel=&#39;RM&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;LSTAT&#39;, ylabel=&#39;RM&#39;&gt;],
+       [&lt;AxesSubplot:xlabel=&#39;MEDV&#39;, ylabel=&#39;ZN&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;RM&#39;, ylabel=&#39;ZN&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;ZN&#39;, ylabel=&#39;ZN&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;LSTAT&#39;, ylabel=&#39;ZN&#39;&gt;],
+       [&lt;AxesSubplot:xlabel=&#39;MEDV&#39;, ylabel=&#39;LSTAT&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;RM&#39;, ylabel=&#39;LSTAT&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;ZN&#39;, ylabel=&#39;LSTAT&#39;&gt;,
+        &lt;AxesSubplot:xlabel=&#39;LSTAT&#39;, ylabel=&#39;LSTAT&#39;&gt;]], dtype=object)</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_def1e874901649fe8b430377f558a7d6/918e698389c9fe53deda44dac3fed859afd69e9e.png" /></p>
+</div>
+</div>
+<section id="there-are-no-straight-lines-observed-digonally-because-it-would-not-be-much-informative-hence-histograms-are-drawn-as-we-have-observed-lstat-have-negative-correlation--0737663-with-medv-therefore-medv-is-inversely-proptional-to-lstat-and-similar-graphs" class="cell markdown">
+<h3>There are no straight lines observed digonally, because it would not be much informative, hence histograms are drawn. As we have observed, LSTAT have negative correlation (-0.737663) with MEDV therefore MEDV is inversely proptional to LSTAT and similar graphs.</h3>
+</section>
+<section id="graph-between-rm-and-medv" class="cell markdown">
+<h3>Graph between RM and MEDV:</h3>
+</section>
+<div class="cell code" data-execution_count="25">
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>housing.plot(kind<span class="op">=</span><span class="st">&quot;scatter&quot;</span>,x<span class="op">=</span><span class="st">&quot;RM&quot;</span>,y<span class="op">=</span><span class="st">&quot;MEDV&quot;</span>,alpha<span class="op">=</span><span class="fl">0.8</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="25">
+<pre><code>&lt;AxesSubplot:xlabel=&#39;RM&#39;, ylabel=&#39;MEDV&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_def1e874901649fe8b430377f558a7d6/d35a96774e8cd209107263d96075f8aef8fcb775.png" /></p>
+</div>
+</div>
+<section id="we-can-elimate-the-outlier-points-to-get-more-accurate-results-in-our-predictions-this-is-the-benifit-of-finding-correlation-matrix" class="cell markdown">
+<h3>We can elimate the outlier points to get more accurate results in our predictions. This is the benifit of finding correlation matrix.</h3>
+</section>
+<section id="trying-out-new-attribute-combinations-to-get-better-coorelations" class="cell markdown">
+<h2>Trying out new attribute combinations to get better coorelations</h2>
+</section>
+<div class="cell code" data-execution_count="26">
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>housing[<span class="st">&quot;TAXRM&quot;</span>] <span class="op">=</span> housing[<span class="st">&quot;TAX&quot;</span>]<span class="op">/</span>housing[<span class="st">&quot;RM&quot;</span>]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="27">
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>housing[<span class="st">&quot;TAXRM&quot;</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="27">
+<pre><code>254     51.571709
+348     42.200452
+476    102.714374
+321     45.012547
+326     45.468948
+          ...    
+155     65.507152
+423    109.126659
+98      35.294118
+455    102.068966
+216     46.875000
+Name: TAXRM, Length: 404, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="28">
+<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>housing.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="28">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CRIM</th>
+      <th>ZN</th>
+      <th>INDUS</th>
+      <th>CHAS</th>
+      <th>NOX</th>
+      <th>RM</th>
+      <th>AGE</th>
+      <th>DIS</th>
+      <th>RAD</th>
+      <th>TAX</th>
+      <th>PTRATIO</th>
+      <th>B</th>
+      <th>LSTAT</th>
+      <th>MEDV</th>
+      <th>TAXRM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>254</th>
+      <td>0.04819</td>
+      <td>80.0</td>
+      <td>3.64</td>
+      <td>0</td>
+      <td>0.392</td>
+      <td>6.108</td>
+      <td>32.0</td>
+      <td>9.2203</td>
+      <td>1</td>
+      <td>315</td>
+      <td>16.4</td>
+      <td>392.89</td>
+      <td>6.57</td>
+      <td>21.9</td>
+      <td>51.571709</td>
+    </tr>
+    <tr>
+      <th>348</th>
+      <td>0.01501</td>
+      <td>80.0</td>
+      <td>2.01</td>
+      <td>0</td>
+      <td>0.435</td>
+      <td>6.635</td>
+      <td>29.7</td>
+      <td>8.3440</td>
+      <td>4</td>
+      <td>280</td>
+      <td>17.0</td>
+      <td>390.94</td>
+      <td>5.99</td>
+      <td>24.5</td>
+      <td>42.200452</td>
+    </tr>
+    <tr>
+      <th>476</th>
+      <td>4.87141</td>
+      <td>0.0</td>
+      <td>18.10</td>
+      <td>0</td>
+      <td>0.614</td>
+      <td>6.484</td>
+      <td>93.6</td>
+      <td>2.3053</td>
+      <td>24</td>
+      <td>666</td>
+      <td>20.2</td>
+      <td>396.21</td>
+      <td>18.68</td>
+      <td>16.7</td>
+      <td>102.714374</td>
+    </tr>
+    <tr>
+      <th>321</th>
+      <td>0.18159</td>
+      <td>0.0</td>
+      <td>7.38</td>
+      <td>0</td>
+      <td>0.493</td>
+      <td>6.376</td>
+      <td>54.3</td>
+      <td>4.5404</td>
+      <td>5</td>
+      <td>287</td>
+      <td>19.6</td>
+      <td>396.90</td>
+      <td>6.87</td>
+      <td>23.1</td>
+      <td>45.012547</td>
+    </tr>
+    <tr>
+      <th>326</th>
+      <td>0.30347</td>
+      <td>0.0</td>
+      <td>7.38</td>
+      <td>0</td>
+      <td>0.493</td>
+      <td>6.312</td>
+      <td>28.9</td>
+      <td>5.4159</td>
+      <td>5</td>
+      <td>287</td>
+      <td>19.6</td>
+      <td>396.90</td>
+      <td>6.15</td>
+      <td>23.0</td>
+      <td>45.468948</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="29">
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>corr_matrix <span class="op">=</span> housing.corr()</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>corr_matrix[<span class="st">&#39;MEDV&#39;</span>].sort_values(ascending <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="29">
+<pre><code>MEDV       1.000000
+RM         0.683023
+B          0.361761
+ZN         0.339741
+DIS        0.240451
+CHAS       0.205066
+AGE       -0.364596
+RAD       -0.374693
+CRIM      -0.393715
+NOX       -0.422873
+TAX       -0.456657
+INDUS     -0.473516
+PTRATIO   -0.493534
+TAXRM     -0.528591
+LSTAT     -0.740494
+Name: MEDV, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="30">
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>housing.plot(kind<span class="op">=</span><span class="st">&quot;scatter&quot;</span>,x<span class="op">=</span><span class="st">&quot;TAXRM&quot;</span>,y<span class="op">=</span><span class="st">&quot;MEDV&quot;</span>,alpha<span class="op">=</span><span class="fl">0.8</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="30">
+<pre><code>&lt;AxesSubplot:xlabel=&#39;TAXRM&#39;, ylabel=&#39;MEDV&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_def1e874901649fe8b430377f558a7d6/ee2c9fcb6d7c3286c2060aa733012b3647823fac.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="31">
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>housing <span class="op">=</span> strat_train_set.drop(<span class="st">&quot;MEDV&quot;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>housing_labels <span class="op">=</span> strat_train_set[<span class="st">&quot;MEDV&quot;</span>].copy()</span></code></pre></div>
+</div>
+<section id="handling-missing-values" class="cell markdown">
+<h2>Handling missing Values</h2>
+</section>
+<section id="to-take-care-of-missing-values-we-have-three-options" class="cell markdown">
+<h3>To take care of missing values, we have three options:</h3>
+</section>
+<div class="cell markdown">
+<h3 id="1-get-rid-of-missing-data-points">1. Get rid of missing data points.</h3>
+<h3 id="2-get-rid-of-whole-attribute">2. Get rid of whole attribute.</h3>
+<h3 id="3-to-replace-missing-values-with-0-mean-or-median-whichever-suites-the-most">3. To replace missing values with 0, Mean or Median, whichever suites the most.</h3>
+</div>
+<div class="cell code" data-execution_count="32">
+<div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">#option 1</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>housing.dropna(subset<span class="op">=</span>[<span class="st">&quot;RM&quot;</span>]).shape</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: No data in original dataframe is harmed until True attribute is not given.</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="32">
+<pre><code>(400, 13)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="33">
+<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co">#option 2</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>housing.drop(<span class="st">&quot;RM&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>).shape</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: No data in original dataframe is harmed.</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="33">
+<pre><code>(404, 12)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="34">
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>median <span class="op">=</span> housing[<span class="st">&quot;RM&quot;</span>].median()</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>housing[<span class="st">&quot;RM&quot;</span>].fillna(median)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: No data in original dataframe is harmed.</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="34">
+<pre><code>254    6.108
+348    6.635
+476    6.484
+321    6.376
+326    6.312
+       ...  
+155    6.152
+423    6.103
+98     7.820
+455    6.525
+216    5.888
+Name: RM, Length: 404, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="35">
+<div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>housing.describe() <span class="co">#Before imputing/filling missing attributes.</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="35">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CRIM</th>
+      <th>ZN</th>
+      <th>INDUS</th>
+      <th>CHAS</th>
+      <th>NOX</th>
+      <th>RM</th>
+      <th>AGE</th>
+      <th>DIS</th>
+      <th>RAD</th>
+      <th>TAX</th>
+      <th>PTRATIO</th>
+      <th>B</th>
+      <th>LSTAT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>400.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>3.602814</td>
+      <td>10.836634</td>
+      <td>11.344950</td>
+      <td>0.069307</td>
+      <td>0.558064</td>
+      <td>6.282808</td>
+      <td>69.039851</td>
+      <td>3.746210</td>
+      <td>9.735149</td>
+      <td>412.341584</td>
+      <td>18.473267</td>
+      <td>353.392822</td>
+      <td>12.791609</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8.099383</td>
+      <td>22.150636</td>
+      <td>6.877817</td>
+      <td>0.254290</td>
+      <td>0.116875</td>
+      <td>0.711595</td>
+      <td>28.258248</td>
+      <td>2.099057</td>
+      <td>8.731259</td>
+      <td>168.672623</td>
+      <td>2.129243</td>
+      <td>96.069235</td>
+      <td>7.235740</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.006320</td>
+      <td>0.000000</td>
+      <td>0.740000</td>
+      <td>0.000000</td>
+      <td>0.389000</td>
+      <td>3.561000</td>
+      <td>2.900000</td>
+      <td>1.129600</td>
+      <td>1.000000</td>
+      <td>187.000000</td>
+      <td>13.000000</td>
+      <td>0.320000</td>
+      <td>1.730000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.086962</td>
+      <td>0.000000</td>
+      <td>5.190000</td>
+      <td>0.000000</td>
+      <td>0.453000</td>
+      <td>5.878750</td>
+      <td>44.850000</td>
+      <td>2.035975</td>
+      <td>4.000000</td>
+      <td>284.000000</td>
+      <td>17.400000</td>
+      <td>374.617500</td>
+      <td>6.847500</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.286735</td>
+      <td>0.000000</td>
+      <td>9.900000</td>
+      <td>0.000000</td>
+      <td>0.538000</td>
+      <td>6.209000</td>
+      <td>78.200000</td>
+      <td>3.122200</td>
+      <td>5.000000</td>
+      <td>337.000000</td>
+      <td>19.000000</td>
+      <td>390.955000</td>
+      <td>11.570000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>3.731923</td>
+      <td>12.500000</td>
+      <td>18.100000</td>
+      <td>0.000000</td>
+      <td>0.631000</td>
+      <td>6.632000</td>
+      <td>94.100000</td>
+      <td>5.100400</td>
+      <td>24.000000</td>
+      <td>666.000000</td>
+      <td>20.200000</td>
+      <td>395.630000</td>
+      <td>17.102500</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>73.534100</td>
+      <td>100.000000</td>
+      <td>27.740000</td>
+      <td>1.000000</td>
+      <td>0.871000</td>
+      <td>8.780000</td>
+      <td>100.000000</td>
+      <td>12.126500</td>
+      <td>24.000000</td>
+      <td>711.000000</td>
+      <td>22.000000</td>
+      <td>396.900000</td>
+      <td>36.980000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="sklearn-has-built-in-imputer-to-deal-with-missing-values" class="cell markdown">
+<h3>sklearn has built in imputer to deal with missing values</h3>
+</section>
+<div class="cell code" data-execution_count="36">
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.impute <span class="im">import</span> SimpleImputer</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>imputer <span class="op">=</span> SimpleImputer(strategy<span class="op">=</span><span class="st">&quot;median&quot;</span>)</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>imputer.fit(housing)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="36">
+<style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>SimpleImputer(strategy=&#x27;median&#x27;)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer(strategy=&#x27;median&#x27;)</pre></div></div></div></div></div>
+</div>
+</div>
+<section id="it-calculates-median-for-each-column" class="cell markdown">
+<h3>It calculates median for each column</h3>
+</section>
+<div class="cell code" data-execution_count="37">
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>imputer.statistics_ <span class="co">#Shows each column median</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="37">
+<pre><code>array([2.86735e-01, 0.00000e+00, 9.90000e+00, 0.00000e+00, 5.38000e-01,
+       6.20900e+00, 7.82000e+01, 3.12220e+00, 5.00000e+00, 3.37000e+02,
+       1.90000e+01, 3.90955e+02, 1.15700e+01])</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="38">
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> imputer.transform(housing)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="39">
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>housing_tr <span class="op">=</span> pd.DataFrame(X, columns<span class="op">=</span>housing.columns) <span class="co"># It is a transformed dataframe without missing values</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="40">
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>housing_tr.describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="40">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CRIM</th>
+      <th>ZN</th>
+      <th>INDUS</th>
+      <th>CHAS</th>
+      <th>NOX</th>
+      <th>RM</th>
+      <th>AGE</th>
+      <th>DIS</th>
+      <th>RAD</th>
+      <th>TAX</th>
+      <th>PTRATIO</th>
+      <th>B</th>
+      <th>LSTAT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+      <td>404.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>3.602814</td>
+      <td>10.836634</td>
+      <td>11.344950</td>
+      <td>0.069307</td>
+      <td>0.558064</td>
+      <td>6.282077</td>
+      <td>69.039851</td>
+      <td>3.746210</td>
+      <td>9.735149</td>
+      <td>412.341584</td>
+      <td>18.473267</td>
+      <td>353.392822</td>
+      <td>12.791609</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8.099383</td>
+      <td>22.150636</td>
+      <td>6.877817</td>
+      <td>0.254290</td>
+      <td>0.116875</td>
+      <td>0.708093</td>
+      <td>28.258248</td>
+      <td>2.099057</td>
+      <td>8.731259</td>
+      <td>168.672623</td>
+      <td>2.129243</td>
+      <td>96.069235</td>
+      <td>7.235740</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.006320</td>
+      <td>0.000000</td>
+      <td>0.740000</td>
+      <td>0.000000</td>
+      <td>0.389000</td>
+      <td>3.561000</td>
+      <td>2.900000</td>
+      <td>1.129600</td>
+      <td>1.000000</td>
+      <td>187.000000</td>
+      <td>13.000000</td>
+      <td>0.320000</td>
+      <td>1.730000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.086962</td>
+      <td>0.000000</td>
+      <td>5.190000</td>
+      <td>0.000000</td>
+      <td>0.453000</td>
+      <td>5.879750</td>
+      <td>44.850000</td>
+      <td>2.035975</td>
+      <td>4.000000</td>
+      <td>284.000000</td>
+      <td>17.400000</td>
+      <td>374.617500</td>
+      <td>6.847500</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.286735</td>
+      <td>0.000000</td>
+      <td>9.900000</td>
+      <td>0.000000</td>
+      <td>0.538000</td>
+      <td>6.209000</td>
+      <td>78.200000</td>
+      <td>3.122200</td>
+      <td>5.000000</td>
+      <td>337.000000</td>
+      <td>19.000000</td>
+      <td>390.955000</td>
+      <td>11.570000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>3.731923</td>
+      <td>12.500000</td>
+      <td>18.100000</td>
+      <td>0.000000</td>
+      <td>0.631000</td>
+      <td>6.630250</td>
+      <td>94.100000</td>
+      <td>5.100400</td>
+      <td>24.000000</td>
+      <td>666.000000</td>
+      <td>20.200000</td>
+      <td>395.630000</td>
+      <td>17.102500</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>73.534100</td>
+      <td>100.000000</td>
+      <td>27.740000</td>
+      <td>1.000000</td>
+      <td>0.871000</td>
+      <td>8.780000</td>
+      <td>100.000000</td>
+      <td>12.126500</td>
+      <td>24.000000</td>
+      <td>711.000000</td>
+      <td>22.000000</td>
+      <td>396.900000</td>
+      <td>36.980000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="scikit-learn-design" class="cell markdown">
+<h2>Scikit-learn design</h2>
+</section>
+<div class="cell markdown">
+<p>It has primarily three types of objescts:</p>
+<ol>
+<li>Estimator - It estimates some parameters based on dataset. Eg. imputer. It has a fit method and transform method. Fit Method- fits the dataset and calculates internal parameters.</li>
+<li>Transformers - transform method takes input and returns output based on the learning from fit(). It also has a convinience function fit_transform() which fits and then transform.</li>
+<li>Predictors - Linear Regression model is an example of predictor. fit() and predict() are two common functions in it. It also have score() function which will evaluate the predictons.</li>
+</ol>
+</div>
+<section id="feature-scaling" class="cell markdown">
+<h2>Feature Scaling</h2>
+</section>
+<div class="cell markdown">
+<p>Primarily, there are two types of features scaling mehods:</p>
+<ol>
+<li><p>Min-Max (Normalization) (value - min)/(max - min) sklearn provides a class called MinMaxScaler</p></li>
+<li><p>Standardization (value-mean)/std std means standard deviation sklearn provides a class called Standard Scaler</p></li>
+</ol>
+</div>
+<section id="creating-pipeline" class="cell markdown">
+<h2>Creating pipeline</h2>
+</section>
+<div class="cell markdown">
+<p>It is used for a series of atomation.</p>
+</div>
+<div class="cell code" data-execution_count="41">
+<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> Pipeline</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>my_pipeline <span class="op">=</span> Pipeline([</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;imputer&#39;</span>,SimpleImputer(strategy<span class="op">=</span><span class="st">&quot;median&quot;</span>)),</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>      <span class="co">#.... add as many pipelines as needed</span></span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;std_scalar&#39;</span>,StandardScaler()), </span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>])</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="42">
+<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>housing_num_tr <span class="op">=</span> my_pipeline.fit_transform(housing_tr)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="43">
+<div class="sourceCode" id="cb60"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>housing_num_tr   <span class="co">#returns numpy array</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="43">
+<pre><code>array([[-0.43942006,  3.12628155, -1.12165014, ..., -0.97491834,
+         0.41164221, -0.86091034],
+       [-0.44352175,  3.12628155, -1.35893781, ..., -0.69277865,
+         0.39131918, -0.94116739],
+       [ 0.15682292, -0.4898311 ,  0.98336806, ...,  0.81196637,
+         0.44624347,  0.81480158],
+       ...,
+       [-0.43525657, -0.4898311 , -1.23083158, ..., -0.22254583,
+         0.41831233, -1.27603303],
+       [ 0.14210728, -0.4898311 ,  0.98336806, ...,  0.81196637,
+        -3.15239177,  0.73869575],
+       [-0.43974024, -0.4898311 ,  0.37049623, ..., -0.97491834,
+         0.41070422,  0.09940681]])</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="44">
+<div class="sourceCode" id="cb62"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>housing_num_tr.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="44">
+<pre><code>(404, 13)</code></pre>
+</div>
+</div>
+<section id="selecting-a-desired-model" class="cell markdown">
+<h2>Selecting a desired model</h2>
+</section>
+<div class="cell code" data-execution_count="45">
+<div class="sourceCode" id="cb64"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co">#from sklearn.linear_model import LinearRegression</span></span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="co">#from sklearn.tree import DecisionTreeRegressor</span></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestRegressor <span class="co"># choosen model</span></span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a><span class="co">#model = LinearRegression() Discarded model due to heavy error of 22.8</span></span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a><span class="co">#model = DecisionTreeRegressor()</span></span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> RandomForestRegressor()</span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a>model.fit(housing_num_tr, housing_labels)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="45">
+<style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>RandomForestRegressor()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">RandomForestRegressor</label><div class="sk-toggleable__content"><pre>RandomForestRegressor()</pre></div></div></div></div></div>
+</div>
+</div>
+<div class="cell code" data-execution_count="46">
+<div class="sourceCode" id="cb65"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>some_data <span class="op">=</span> housing.iloc[:<span class="dv">5</span>]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="47">
+<div class="sourceCode" id="cb66"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>some_labels <span class="op">=</span> housing_labels.iloc[:<span class="dv">5</span>]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="48">
+<div class="sourceCode" id="cb67"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>prepared_data <span class="op">=</span> my_pipeline.transform(some_data)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="49">
+<div class="sourceCode" id="cb68"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>model.predict(prepared_data) <span class="co">#Gives pedicted values in the form of an array</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="49">
+<pre><code>array([22.317, 25.696, 16.502, 23.511, 23.583])</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="50">
+<div class="sourceCode" id="cb70"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span>(some_labels) <span class="co">#These are the expected values</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="50">
+<pre><code>[21.9, 24.5, 16.7, 23.1, 23.0]</code></pre>
+</div>
+</div>
+<section id="evaluation-of-the-model" class="cell markdown">
+<h2>Evaluation of the model</h2>
+</section>
+<div class="cell code" data-execution_count="51">
+<div class="sourceCode" id="cb72"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error</span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>housing_predictions <span class="op">=</span> model.predict(housing_num_tr)</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a><span class="co">#lin_mse = mean_squared_error(housing_labels, housing_predictions) linear mean squared error</span></span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a><span class="co">#lin_rmse = np.sqrt(lin_mse) root mean squared error</span></span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a>mse <span class="op">=</span> mean_squared_error(housing_labels, housing_predictions) <span class="co"># mean squared error</span></span>
+<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a>rmse <span class="op">=</span> np.sqrt(mse) <span class="co"># root mean squared error</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="52">
+<div class="sourceCode" id="cb73"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>rmse <span class="co">#The error is 0. It meams, this model has learned the dataset along with factors like noise. It is called overfitting. Our model needs to follow trend and not noise. Hence, we need to avoid the condition of overfitting or underfitting.</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="52">
+<pre><code>1.3030784295522488</code></pre>
+</div>
+</div>
+<section id="better-evalutaion---cross-validation" class="cell markdown">
+<h2>Better evalutaion - (cross validation)</h2>
+</section>
+<div class="cell markdown">
+<p>1,2,3,4,5,6,7,8,9,10 We will do stepwise testing for errors. Like, in first round, we will eliminate 1, and test rest of the cases, than eliminate 1,2 and test rest of the cases and so on...</p>
+</div>
+<div class="cell code" data-execution_count="53">
+<div class="sourceCode" id="cb75"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a>scores <span class="op">=</span> cross_val_score(model, housing_num_tr, housing_labels, scoring<span class="op">=</span><span class="st">&quot;neg_mean_squared_error&quot;</span>, cv<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a>rmse_scores <span class="op">=</span> np.sqrt(<span class="op">-</span>scores)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="54">
+<div class="sourceCode" id="cb76"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>rmse_scores</span></code></pre></div>
+<div class="output execute_result" data-execution_count="54">
+<pre><code>array([2.76236684, 2.72915525, 4.43665258, 2.73340914, 3.40079296,
+       2.61371069, 5.15244869, 3.28961837, 3.02669383, 3.1373396 ])</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="55">
+<div class="sourceCode" id="cb78"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_scores(scores):</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Scores: &quot;</span>,scores)</span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Mean: &quot;</span>,scores.mean())</span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Standard Deviation: &quot;</span>,scores.std())</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="56">
+<div class="sourceCode" id="cb79"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>print_scores(rmse_scores) <span class="co">#best model = RandomForestRegressor</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Scores:  [2.76236684 2.72915525 4.43665258 2.73340914 3.40079296 2.61371069
+ 5.15244869 3.28961837 3.02669383 3.1373396 ]
+Mean:  3.3282187957275076
+Standard Deviation:  0.789552738177566
+</code></pre>
+</div>
+</div>
+<section id="saving-the-model" class="cell markdown">
+<h2>Saving the model</h2>
+</section>
+<div class="cell code" data-execution_count="57">
+<div class="sourceCode" id="cb81"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> joblib <span class="im">import</span> dump,load</span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a>dump(model,<span class="st">&quot;DRL.joblib&quot;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="57">
+<pre><code>[&#39;DRL.joblib&#39;]</code></pre>
+</div>
+</div>
+<section id="testing-on-test-data-set" class="cell markdown">
+<h2>Testing on test data set</h2>
+</section>
+<div class="cell code" data-execution_count="58">
+<div class="sourceCode" id="cb83"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> strat_test_set.drop(<span class="st">&quot;MEDV&quot;</span>, axis<span class="op">=</span><span class="dv">1</span>) <span class="co">#Dropping label</span></span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>Y_test <span class="op">=</span> strat_test_set[<span class="st">&quot;MEDV&quot;</span>].copy()</span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a>X_test_prepared <span class="op">=</span> my_pipeline.transform(X_test)</span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a>final_predictions <span class="op">=</span> model.predict(X_test_prepared)</span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>final_mse <span class="op">=</span> mean_squared_error(Y_test, final_predictions)</span>
+<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a>final_rmse <span class="op">=</span> np.sqrt(final_mse)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="59">
+<div class="sourceCode" id="cb84"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>final_rmse <span class="co">#The lesser the rmse, the better is the model. But it should not be 0.</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="59">
+<pre><code>3.0763381131264658</code></pre>
+</div>
+</div>
+</body>
+</html>

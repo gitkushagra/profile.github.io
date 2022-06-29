@@ -1,0 +1,372 @@
+Microsoft Windows [Version 10.0.19044.1766]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\pythonProject\MLproject>pip3 --version
+pip 21.2.4 from C:\ProgramData\Anaconda3\lib\site-packages\pip (python 3.9)
+
+E:\pythonProject\MLproject>pip3 install --upgrade pip
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pip in c:\programdata\anaconda3\lib\site-packages (21.2.4)
+Collecting pip
+  Downloading pip-22.1.2-py3-none-any.whl (2.1 MB)
+     |████████████████████████████████| 2.1 MB 1.1 MB/s
+Installing collected packages: pip
+  WARNING: The scripts pip.exe, pip3.10.exe, pip3.9.exe and pip3.exe are installed in 'C:\Users\kusha\AppData\Roaming\Python\Python39\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed pip-22.1.2
+
+E:\pythonProject\MLproject>pip3 install --upgarde jupyter matplotlib numpy pandas scipy scikit-learn
+
+Usage:
+  pip3 install [options] <requirement specifier> [package-index-options] ...
+  pip3 install [options] -r <requirements file> [package-index-options] ...
+  pip3 install [options] [-e] <vcs project url> ...
+  pip3 install [options] [-e] <local project path> ...
+  pip3 install [options] <archive url/path> ...
+
+no such option: --upgarde
+
+E:\pythonProject\MLproject>pip3 install --upgrade jupyter matplotlib numpy pandas scipy scikit-learn
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: jupyter in c:\programdata\anaconda3\lib\site-packages (1.0.0)
+Requirement already satisfied: matplotlib in c:\programdata\anaconda3\lib\site-packages (3.5.1)
+Collecting matplotlib
+  Downloading matplotlib-3.5.2-cp39-cp39-win_amd64.whl (7.2 MB)
+     ---------------------------------------- 7.2/7.2 MB 5.2 MB/s eta 0:00:00
+Requirement already satisfied: numpy in c:\programdata\anaconda3\lib\site-packages (1.21.5)
+Collecting numpy
+  Downloading numpy-1.23.0-cp39-cp39-win_amd64.whl (14.7 MB)
+     ---------------------------------------- 14.7/14.7 MB 2.4 MB/s eta 0:00:00
+Requirement already satisfied: pandas in c:\programdata\anaconda3\lib\site-packages (1.4.2)
+Collecting pandas
+  Downloading pandas-1.4.3-cp39-cp39-win_amd64.whl (10.6 MB)
+     ---------------------------------------- 10.6/10.6 MB 2.3 MB/s eta 0:00:00
+Requirement already satisfied: scipy in c:\programdata\anaconda3\lib\site-packages (1.7.3)
+Collecting scipy
+  Downloading scipy-1.8.1-cp39-cp39-win_amd64.whl (36.9 MB)
+     ---------------------------------------- 36.9/36.9 MB 4.2 MB/s eta 0:00:00
+Requirement already satisfied: scikit-learn in c:\users\kusha\appdata\roaming\python\python39\site-packages (1.1.1)
+Requirement already satisfied: notebook in c:\programdata\anaconda3\lib\site-packages (from jupyter) (6.4.8)
+Requirement already satisfied: ipywidgets in c:\programdata\anaconda3\lib\site-packages (from jupyter) (7.6.5)
+Requirement already satisfied: ipykernel in c:\programdata\anaconda3\lib\site-packages (from jupyter) (6.9.1)
+Requirement already satisfied: jupyter-console in c:\programdata\anaconda3\lib\site-packages (from jupyter) (6.4.0)
+Requirement already satisfied: qtconsole in c:\programdata\anaconda3\lib\site-packages (from jupyter) (5.3.0)
+Requirement already satisfied: nbconvert in c:\programdata\anaconda3\lib\site-packages (from jupyter) (6.4.4)
+Requirement already satisfied: kiwisolver>=1.0.1 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (0.11.0)
+Requirement already satisfied: pillow>=6.2.0 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (9.0.1)
+Requirement already satisfied: python-dateutil>=2.7 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: packaging>=20.0 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (21.3)
+Requirement already satisfied: fonttools>=4.22.0 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (4.25.0)
+Requirement already satisfied: pyparsing>=2.2.1 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (3.0.4)
+Requirement already satisfied: pytz>=2020.1 in c:\programdata\anaconda3\lib\site-packages (from pandas) (2021.3)
+Requirement already satisfied: joblib>=1.0.0 in c:\programdata\anaconda3\lib\site-packages (from scikit-learn) (1.1.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in c:\programdata\anaconda3\lib\site-packages (from scikit-learn) (2.2.0)
+Requirement already satisfied: six>=1.5 in c:\programdata\anaconda3\lib\site-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+Requirement already satisfied: jupyter-client<8.0 in c:\programdata\anaconda3\lib\site-packages (from ipykernel->jupyter) (6.1.12)
+Requirement already satisfied: tornado<7.0,>=4.2 in c:\programdata\anaconda3\lib\site-packages (from ipykernel->jupyter) (6.1)
+Requirement already satisfied: ipython>=7.23.1 in c:\programdata\anaconda3\lib\site-packages (from ipykernel->jupyter) (8.2.0)
+Requirement already satisfied: debugpy<2.0,>=1.0.0 in c:\programdata\anaconda3\lib\site-packages (from ipykernel->jupyter) (1.5.1)
+Requirement already satisfied: traitlets<6.0,>=5.1.0 in c:\programdata\anaconda3\lib\site-packages (from ipykernel->jupyter) (5.1.1)
+Requirement already satisfied: nest-asyncio in c:\programdata\anaconda3\lib\site-packages (from ipykernel->jupyter) (1.5.5)
+Requirement already satisfied: matplotlib-inline<0.2.0,>=0.1.0 in c:\programdata\anaconda3\lib\site-packages (from ipykernel->jupyter) (0.1.2)
+Requirement already satisfied: ipython-genutils~=0.2.0 in c:\programdata\anaconda3\lib\site-packages (from ipywidgets->jupyter) (0.2.0)
+Requirement already satisfied: widgetsnbextension~=3.5.0 in c:\programdata\anaconda3\lib\site-packages (from ipywidgets->jupyter) (3.5.2)
+Requirement already satisfied: nbformat>=4.2.0 in c:\programdata\anaconda3\lib\site-packages (from ipywidgets->jupyter) (5.3.0)
+Requirement already satisfied: jupyterlab-widgets>=1.0.0 in c:\programdata\anaconda3\lib\site-packages (from ipywidgets->jupyter) (1.0.0)
+Requirement already satisfied: pygments in c:\programdata\anaconda3\lib\site-packages (from jupyter-console->jupyter) (2.11.2)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in c:\programdata\anaconda3\lib\site-packages (from jupyter-console->jupyter) (3.0.20)
+Requirement already satisfied: jinja2>=2.4 in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (2.11.3)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (1.5.0)
+Requirement already satisfied: beautifulsoup4 in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (4.11.1)
+Requirement already satisfied: entrypoints>=0.2.2 in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (0.4)
+Requirement already satisfied: testpath in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (0.5.0)
+Requirement already satisfied: nbclient<0.6.0,>=0.5.0 in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (0.5.13)
+Requirement already satisfied: jupyter-core in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (4.9.2)
+Requirement already satisfied: jupyterlab-pygments in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (0.1.2)
+Requirement already satisfied: mistune<2,>=0.8.1 in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (0.8.4)
+Requirement already satisfied: bleach in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (4.1.0)
+Requirement already satisfied: defusedxml in c:\programdata\anaconda3\lib\site-packages (from nbconvert->jupyter) (0.7.1)
+Requirement already satisfied: pyzmq>=17 in c:\programdata\anaconda3\lib\site-packages (from notebook->jupyter) (22.3.0)
+Requirement already satisfied: terminado>=0.8.3 in c:\programdata\anaconda3\lib\site-packages (from notebook->jupyter) (0.13.1)
+Requirement already satisfied: prometheus-client in c:\programdata\anaconda3\lib\site-packages (from notebook->jupyter) (0.13.1)
+Requirement already satisfied: Send2Trash>=1.8.0 in c:\programdata\anaconda3\lib\site-packages (from notebook->jupyter) (1.8.0)
+Requirement already satisfied: argon2-cffi in c:\programdata\anaconda3\lib\site-packages (from notebook->jupyter) (21.3.0)
+Requirement already satisfied: qtpy>=2.0.1 in c:\programdata\anaconda3\lib\site-packages (from qtconsole->jupyter) (2.0.1)
+Requirement already satisfied: backcall in c:\programdata\anaconda3\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.2.0)
+Requirement already satisfied: jedi>=0.16 in c:\programdata\anaconda3\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.18.1)
+Requirement already satisfied: colorama in c:\programdata\anaconda3\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.4.4)
+Requirement already satisfied: setuptools>=18.5 in c:\programdata\anaconda3\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (61.2.0)
+Requirement already satisfied: pickleshare in c:\programdata\anaconda3\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.7.5)
+Requirement already satisfied: decorator in c:\programdata\anaconda3\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (5.1.1)
+Requirement already satisfied: stack-data in c:\programdata\anaconda3\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.2.0)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\programdata\anaconda3\lib\site-packages (from jinja2>=2.4->nbconvert->jupyter) (2.0.1)
+Requirement already satisfied: pywin32>=1.0 in c:\programdata\anaconda3\lib\site-packages (from jupyter-core->nbconvert->jupyter) (302)
+Requirement already satisfied: fastjsonschema in c:\programdata\anaconda3\lib\site-packages (from nbformat>=4.2.0->ipywidgets->jupyter) (2.15.1)
+Requirement already satisfied: jsonschema>=2.6 in c:\programdata\anaconda3\lib\site-packages (from nbformat>=4.2.0->ipywidgets->jupyter) (4.4.0)
+Requirement already satisfied: wcwidth in c:\programdata\anaconda3\lib\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->jupyter-console->jupyter) (0.2.5)
+Requirement already satisfied: pywinpty>=1.1.0 in c:\programdata\anaconda3\lib\site-packages (from terminado>=0.8.3->notebook->jupyter) (2.0.2)
+Requirement already satisfied: argon2-cffi-bindings in c:\programdata\anaconda3\lib\site-packages (from argon2-cffi->notebook->jupyter) (21.2.0)
+Requirement already satisfied: soupsieve>1.2 in c:\programdata\anaconda3\lib\site-packages (from beautifulsoup4->nbconvert->jupyter) (2.3.1)
+Requirement already satisfied: webencodings in c:\programdata\anaconda3\lib\site-packages (from bleach->nbconvert->jupyter) (0.5.1)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in c:\programdata\anaconda3\lib\site-packages (from jedi>=0.16->ipython>=7.23.1->ipykernel->jupyter) (0.8.3)
+Requirement already satisfied: attrs>=17.4.0 in c:\programdata\anaconda3\lib\site-packages (from jsonschema>=2.6->nbformat>=4.2.0->ipywidgets->jupyter) (21.4.0)
+Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in c:\programdata\anaconda3\lib\site-packages (from jsonschema>=2.6->nbformat>=4.2.0->ipywidgets->jupyter) (0.18.0)
+Requirement already satisfied: cffi>=1.0.1 in c:\programdata\anaconda3\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->notebook->jupyter) (1.15.0)
+Requirement already satisfied: asttokens in c:\programdata\anaconda3\lib\site-packages (from stack-data->ipython>=7.23.1->ipykernel->jupyter) (2.0.5)
+Requirement already satisfied: pure-eval in c:\programdata\anaconda3\lib\site-packages (from stack-data->ipython>=7.23.1->ipykernel->jupyter) (0.2.2)
+Requirement already satisfied: executing in c:\programdata\anaconda3\lib\site-packages (from stack-data->ipython>=7.23.1->ipykernel->jupyter) (0.8.3)
+Requirement already satisfied: pycparser in c:\programdata\anaconda3\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->notebook->jupyter) (2.21)
+Installing collected packages: numpy, scipy, pandas, matplotlib
+  WARNING: The script f2py.exe is installed in 'C:\Users\kusha\AppData\Roaming\Python\Python39\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+daal4py 2021.5.0 requires daal==2021.4.0, which is not installed.
+numba 0.55.1 requires numpy<1.22,>=1.18, but you have numpy 1.23.0 which is incompatible.
+Successfully installed matplotlib-3.5.2 numpy-1.23.0 pandas-1.4.3 scipy-1.8.1
+
+E:\pythonProject\MLproject>
+
+E:\pythonProject\MLproject>
+E:\pythonProject\MLproject>
+E:\pythonProject\MLproject>python -c "import jupyter, matplotlib, numpy, pandas, scipy, sklearn"
+
+E:\pythonProject\MLproject>jupyter notebook
+[W 2022-06-27 14:20:15.697 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-06-27 14:20:15.697 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-06-27 14:20:15.713 LabApp] JupyterLab extension loaded from C:\ProgramData\Anaconda3\lib\site-packages\jupyterlab
+[I 2022-06-27 14:20:15.713 LabApp] JupyterLab application directory is C:\ProgramData\Anaconda3\share\jupyter\lab
+[I 14:20:15.729 NotebookApp] Serving notebooks from local directory: E:\pythonProject\MLproject
+[I 14:20:15.729 NotebookApp] Jupyter Notebook 6.4.8 is running at:
+[I 14:20:15.729 NotebookApp] http://localhost:8888/
+[I 14:20:15.729 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 14:21:53.013 NotebookApp] Creating new notebook in
+[I 14:21:59.030 NotebookApp] Kernel started: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e, name: python3
+[I 14:23:58.785 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 14:27:58.754 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 14:49:41.409 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 14:49:41.882 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 14:49:41.962 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 14:49:45.200 NotebookApp] Replaying 3 buffered messages
+[I 14:49:58.454 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 14:51:58.436 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 14:54:48.578 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 14:54:49.058 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 14:54:49.100 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 14:54:52.342 NotebookApp] Replaying 3 buffered messages
+[I 14:55:02.453 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 14:55:02.906 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 14:55:02.933 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 14:55:06.521 NotebookApp] Replaying 3 buffered messages
+[I 14:55:58.439 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 14:57:58.751 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 14:59:58.433 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:01:58.742 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:03:58.427 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:05:58.754 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:11:58.426 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:12:07.192 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 15:12:07.658 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 15:12:07.698 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 15:12:10.907 NotebookApp] Replaying 3 buffered messages
+[I 15:13:58.737 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:15:58.768 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:23:58.459 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:25:58.738 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:29:58.445 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 15:31:58.463 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:01:58.451 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:03:58.744 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:05:58.723 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:07:58.745 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:09:04.270 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 16:09:04.853 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 16:09:04.948 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[W 16:09:09.532 NotebookApp] Nudge: attempt 10 on kernel 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 16:09:09.552 NotebookApp] Replaying 3 buffered messages
+[I 16:09:58.440 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:11:58.448 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:13:58.418 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:15:58.750 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:17:58.425 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:18:57.825 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 16:18:58.389 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 16:18:58.450 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 16:19:01.652 NotebookApp] Replaying 3 buffered messages
+[I 16:19:58.773 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:21:58.740 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:23:58.439 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:25:58.721 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:26:49.760 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 16:26:50.894 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 16:26:50.967 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 16:26:54.529 NotebookApp] Replaying 3 buffered messages
+[I 16:27:58.758 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:33:58.472 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:35:58.433 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:37:58.738 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:43:58.430 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:45:58.751 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:47:58.722 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:49:58.437 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:51:58.727 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:55:58.435 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:57:58.470 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 16:59:58.441 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:01:58.454 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:11:58.418 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:13:58.421 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:25:58.478 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:27:58.442 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:29:58.775 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:33:58.432 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:34:59.232 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:35:58.462 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:37:58.759 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:41:58.444 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:43:58.764 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:49:58.452 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:53:58.436 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:55:58.446 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:57:58.445 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 17:59:58.744 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:03:10.457 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 18:03:12.139 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 18:03:12.206 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 18:03:15.413 NotebookApp] Replaying 3 buffered messages
+[I 18:03:58.460 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:05:58.496 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:07:58.460 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:09:58.756 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:15:58.466 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:17:58.745 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:19:58.747 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:21:58.459 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:23:58.755 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:29:58.441 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:31:58.767 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:33:58.482 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:35:58.439 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:39:58.503 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:41:51.017 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 18:41:51.812 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 18:41:51.875 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 18:41:55.159 NotebookApp] Replaying 3 buffered messages
+[I 18:41:58.413 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:43:58.772 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:45:58.451 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:47:04.833 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 18:47:05.512 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 18:47:05.540 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 18:47:09.113 NotebookApp] Replaying 3 buffered messages
+[I 18:47:58.461 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:49:58.735 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:51:58.753 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 18:59:58.456 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 19:01:58.460 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 19:03:58.663 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 19:05:58.731 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 19:07:58.746 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 19:28:50.195 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 20:05:00.934 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 20:07:58.454 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:10:28.243 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:11:58.781 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:13:58.485 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:15:58.841 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:17:58.469 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:19:58.770 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:26:18.544 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:27:58.786 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:29:58.847 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:31:58.459 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:33:58.869 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:43:58.447 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:45:58.776 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:47:58.444 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:48:11.066 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 20:48:12.416 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 20:48:12.516 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 20:48:16.613 NotebookApp] Replaying 3 buffered messages
+[I 20:49:58.872 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:51:58.484 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:53:58.781 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:55:58.786 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:57:58.460 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 20:59:58.823 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:03:58.452 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:05:58.467 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:07:58.777 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:11:58.477 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:12:43.683 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 21:12:45.137 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 21:12:45.173 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 21:12:48.520 NotebookApp] Replaying 3 buffered messages
+[I 21:13:58.823 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:15:58.909 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:17:58.846 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:21:58.469 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:23:58.804 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:29:27.514 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 21:29:28.296 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 21:29:28.342 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 21:29:31.728 NotebookApp] Replaying 3 buffered messages
+[I 21:29:58.499 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:31:58.480 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:33:58.781 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:35:58.433 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:37:58.454 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:49:58.475 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:51:58.769 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:52:00.399 NotebookApp] Creating new file in
+[I 21:54:52.963 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 21:54:54.161 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 21:54:54.187 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 21:54:58.211 NotebookApp] Replaying 3 buffered messages
+[I 21:55:58.485 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 21:57:08.035 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 21:57:08.724 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 21:57:08.757 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 21:57:12.121 NotebookApp] Replaying 3 buffered messages
+[I 21:57:58.859 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:01:58.857 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:04:23.539 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 22:04:24.552 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 22:04:24.594 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 22:04:28.210 NotebookApp] Replaying 3 buffered messages
+[I 22:05:58.813 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:09:58.474 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:11:58.851 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:13:58.818 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:15:58.821 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:19:58.475 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:21:58.790 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:23:58.481 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:25:58.767 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:27:58.480 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:29:58.828 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:33:57.018 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:34:08.422 NotebookApp] Saving file at /Results.txt
+[I 22:34:14.248 NotebookApp] Creating new notebook in
+[I 22:34:18.778 NotebookApp] Kernel started: 55bf9af9-ee58-4391-934d-a3ac6e0699d4, name: python3
+[I 22:36:18.792 NotebookApp] Saving file at /Using the model.ipynb
+[I 22:37:58.764 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:38:18.647 NotebookApp] Saving file at /Using the model.ipynb
+[I 22:40:18.794 NotebookApp] Saving file at /Using the model.ipynb
+[I 22:48:42.997 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:48:52.811 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 22:48:54.045 NotebookApp] Kernel restarted: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 22:48:54.113 NotebookApp] Restoring connection for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 22:48:56.960 NotebookApp] Replaying 3 buffered messages
+[I 22:49:19.748 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:49:21.782 NotebookApp] Saving file at /DragonRealEstate.ipynb
+[I 22:49:22.700 NotebookApp] Starting buffering for 2275e71d-9a8a-4b29-951d-ec0a27a8d06e:c44a351f720e4620848cb34a71f39a0d
+[I 22:49:25.344 NotebookApp] Saving file at /Using the model.ipynb
+[I 22:49:26.601 NotebookApp] Starting buffering for 55bf9af9-ee58-4391-934d-a3ac6e0699d4:93dedf68b50748b39195fc001d697240
+[I 22:49:34.500 NotebookApp] Shutting down on /api/shutdown request.
+[I 22:49:34.506 NotebookApp] Shutting down 2 kernels
+[I 22:49:35.256 NotebookApp] Kernel shutdown: 2275e71d-9a8a-4b29-951d-ec0a27a8d06e
+[I 22:49:35.260 NotebookApp] Kernel shutdown: 55bf9af9-ee58-4391-934d-a3ac6e0699d4
+[I 22:49:35.263 NotebookApp] Shutting down 0 terminals
+
+E:\pythonProject\MLproject>
