@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bus Yatra Booking</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./img/projects.png" rel="icon">
+<!--
+Next Level CSS Template
+https://templatemo.com/tm-532-next-level
+-->
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row tm-brand-row">
+        <div class="col-lg-4 col-10">
+          <div class="tm-brand-container">
+            <div class="tm-brand-texts">
+              <h1><b>Bus Yatra Booking -- Bus Business Management Application</b></h1>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-8 col-2 tm-nav-col">
+          <div class="tm-nav">
+            <nav class="navbar navbar-expand-lg navbar-light tm-navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-0">
+                  <li class="nav-item active">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="http://www.kushagrame.work/projects.html"
+                      >View All Projects <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  
+                 
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row tm-welcome-row">
+        <div class="col-12 tm-page-cols-container">
+          <div class="tm-page-col-left tm-welcome-box tm-bg-primary">
+            <p class="tm-welcome-text">
+              <em>"Developed a bus business management system which solves the problem of bus business owners of managing their booking system and their customers."</em>
+            </p>
+          </div>
+          <div class="tm-page-col-right">
+            <div
+              class="tm-welcome-parallax"
+              data-parallax="scroll"
+              data-image-src="img/mainframe.jpeg"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="row tm-pt-4 tm-pb-6">
+        <div class="col-12 tm-page-cols-container">
+          <div class="tm-page-col-right">
+            <h2 class="tm-text-secondary tm-mb-5">
+                Bus Yatra Booking | C#, Dot Net, MVC, ASP.NET and SSMS
+            </h2>
+            <p class="tm-mb-6">
+              <strong>AIM: </strong> To build a bus business management that follows:
+              <ol><li>MVC Architecture</li><li>Utilization of Stored Procedure</li><li>Use Foreign Key</li><li>Check Constraint</li></ol> 
+              <br>
+              <strong>Tools Used:</strong>
+              <ol><li>Visual Studio Professional 2019</li><li>SQL Server Management Studio 19 Express</li><li>ASP.NET and DOT NET Framework</li><li>HTML, CSS and JavaScript</li><li>RDBMS</li></ol>
+            </p>
+            <p class="mb-0">
+                <strong>Theory: </strong>
+                <br>
+                USERS Prospective:
+                <br>
+                <ul><li>Shows all routes and prices to the user.</li><li>Display all bus information based on locations, capacity and prices. Availabale seats are only shown to logged in users.</li>
+                <li>Users can start booking after creating the account.</li>
+                <li>Users can view their bookings. They can cancel their booking based on locations.</li>
+                <li>User personal background bank is created in which their bookings cost is monitored. It affects the earnings of owner.</li>
+                <li>Users can delete their account. All their related data is vanished once deleted.</li>
+                </ul>
+                <br>
+                ADMIN Prospective:
+                <br>
+                <ul>
+                    <li>A default admin credential is provided as "admin" and password "12345".</li>
+                    <li>Admin create a new credential and delete the existing one. The credential is only deleted when atleast one credential is available.</li>
+                    <li>Admin is provided full control with CRUD operations to manage bookings based on username,manage buses, view and manage feedbacks, manage routes.</li>
+                    <li>Total earnings is displayed.</li>
+                </ul>
+                <br>
+                Database Information:
+                <br>
+                <ul>
+                    <li>"busBusinessDatabase" database is created to manage all records.</li>
+                    <li>7 Tables created:</li>
+                       <ol>
+                        <li>adminlogins</li>
+                        <li>Bookings</li>
+                        <li>Bus_Details</li>
+                        <li>Feedbacks</li>
+                        <li>Route</li>
+                        <li>userbank</li>
+                        <li>userinfo</li>
+                       </ol>
+                    <li>25 Stored Procedures created to manage all CRUD operations through web application based on conditions applicable.</li>
+                    <li>In booking, a check constraint is added if age >=18.</li>
+                    <li>Foreign keys added:</li>
+                        <ol>
+                            <li>If username doesn't exist in userinfo, it cannot be added into bookings.</li>
+                            <li>If routeid is not added in route table, it will not be allowed to be added in bus table.</li>
+                        </ol>
+                </ul>
+                <br>
+           	 <strong>Technologies Used: </strong>
+              <br>
+              <ol>
+                <li>Visual Studio 2019</li>
+                <li>SQL Server Management Studio 19 Express</li>
+                <li>ASP.NET web application (.NET Framework)</li>
+                <li>MVC (Model View Controller)</li>
+                <li>HTML, CSS and JavaScript</li>
+                <li>RDBMS (Relational Database Management System)</li>
+              </ol>
+               <br>
+               <strong>ER Diagrams: </strong>
+               <br>
+               User Prospective: 
+               <iframe src="./img/busyatrabookingimages/userpros.jpeg" height="400" width="100%" title="Coding for advanced calculator"></iframe>
+               <br>
+               Admin Prospective:
+               <iframe src="./img/busyatrabookingimages/adminpros.jpeg" height="400" width="100%" title="Coding for advanced calculator"></iframe>
+               <br>
+               <strong>Outputs: </strong>
+               <iframe src="./img/busyatrabookingimages/output.jpeg" height="400" width="100%" title="Coding for advanced calculator"></iframe>
+               <br>
+               <iframe src="./img/busyatrabookingimages/options.jpeg" height="400" width="100%" title="Coding for advanced calculator"></iframe>
+               <br>
+               <br>
+               <p style="color:blue"> <b> View it on my GitHub: <a href="https://github.com/gitkushagra/busBusinessManagement">
+                <img alt="Logo: link to github" src="./img/gitlogo.png" width="50" height="50"> <img src="./img/hyperlink.png" style="width:30px;height:30px;">
+                </a></b></p>
+            </p>
+            
+          </div>
+        </div>
+        
+      </section>
+      
+      <div class="tm-page-col-right">
+        
+
+
+
+
+      
+
+        </div>
+      </div>
+      <!-- row -->
+
+      <!-- Call to Action -->
+  
+      <!-- Page footer -->
+      <footer class="row tm-page-footer">
+        <p class="col-12 tm-copyright-text mb-0">
+          © Copyright Kushagra | Made with ❤️ in India
+          <a href="http://www.kushagrame.work" rel="nofollow" class="tm-copyright-link"><b>| Go to home</b></a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
